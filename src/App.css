@@ -5,28 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -39,4 +17,32 @@
 
 .read-the-docs {
   color: #888;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead th {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+tbody tr:first-child td:nth-child(2), /* Email */
+tbody tr:first-child td:nth-child(3) { /* Phone */
+  font-weight: bold; /* Make Email and Phone bold */
+}
+
+tbody td:first-child {
+  font-weight: bold;
 }
